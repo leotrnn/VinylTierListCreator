@@ -1,0 +1,109 @@
+
+.suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    z-index: 1;
+}
+
+#coverPreview {
+    max-width: 300px;
+    max-height: 300px;
+    display: none;
+    /* Masquer la prévisualisation par défaut */
+    margin-top: 10px;
+}
+
+#loading {
+    display: none;
+    /* Masquer l'indicateur de chargement par défaut */
+    font-size: 14px;
+    color: #F54640;
+    /* Couleur pour l'indicateur de chargement */
+}
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9F9F9; /* Couleur de fond claire */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #534E76; /* Couleur pour les titres */
+    text-align: center;
+}
+
+/* Formulaire */
+form {
+    max-width: 600px; /* Largeur maximum du formulaire */
+    margin: 20px auto; /* Centrer le formulaire */
+    padding: 20px;
+    border: 1px solid #3E836E; /* Bordure pour le formulaire */
+    border-radius: 8px; /* Coins arrondis */
+    background-color: white; /* Couleur de fond du formulaire */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+label {
+    display: block; /* Afficher chaque label sur une nouvelle ligne */
+    margin-bottom: 8px;
+    color: #534E76; /* Couleur pour les labels */
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%; /* Largeur à 100% */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #3E836E; /* Bordure pour les champs de texte */
+    border-radius: 4px; /* Coins arrondis */
+}
+
+input[type="submit"] {
+    background-color: #F54640; /* Couleur de fond pour le bouton */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointer pour le bouton */
+    font-size: 16px; /* Taille du texte */
+}
+
+input[type="submit"]:hover {
+    background-color: #3E836E; /* Couleur au survol */
+}
+
+/* Suggestions */
+#artistSuggestions,
+#releaseSuggestions {
+    border: none; /* Bordure pour la boîte de suggestions */
+    background-color: white; /* Couleur de fond blanche */
+    margin-top: 10px;
+    max-height: 200px; /* Hauteur maximale */
+    overflow-y: auto; /* Défilement vertical */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    padding: 5px; /* Espacement interne */
+    cursor: pointer; /* Curseur pointer pour les suggestions */
+}
+
+.suggestion-item:hover {
+    background-color: #F0F0F0; /* Couleur de fond au survol */
+}
+
+/* Prévisualisation de l'image de couverture */
+#coverPreview {
+    display: none; /* Masquer par défaut */
+    margin-top: 10px; /* Espacement au-dessus de l'image */
+    max-width: 100%; /* Largeur maximale */
+    border: 1px solid #3E836E; /* Bordure pour l'image */
+    border-radius: 4px; /* Coins arrondis */
+}
