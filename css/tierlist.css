@@ -1,0 +1,60 @@
+.song {
+    position: relative; /* Nécessaire pour le positionnement de l'élément ::before */
+    width: 100px; /* Largeur fixe pour les carrés */
+    height: 100px; /* Hauteur fixe pour les carrés */
+    margin: 5px; /* Espacement entre les morceaux */
+    display: flex; /* Flexbox pour centrer le texte */
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    color: white; /* Couleur du texte */
+    font-weight: bold; /* Mettre le texte en gras */
+    cursor: move; /* Curseur pour indiquer que l'élément est déplaçable */
+    background-size: cover; /* Couvre entièrement le carré sans déformer l'image */
+    background-position: center; /* Centrer l'image */
+}
+
+.song::before {
+    content: ""; /* Nécessaire pour créer l'élément */
+    position: absolute; /* Positionner l'élément au-dessus de l'image */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur noire avec une transparence de 50% */
+    border-radius: 5px; /* Arrondir les coins si nécessaire */
+    z-index: 1; /* Assurez-vous que l'élément est au-dessus de l'image */
+}
+
+.song-title {
+    position: relative; /* Positionner le texte par rapport à son conteneur */
+    z-index: 2; /* Mettre le texte au-dessus du filtre */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre pour le texte */
+}
+
+
+.songs.dragover {
+    border: 2px dashed #F54640; /* Bordure pour indiquer où l'élément peut être déposé */
+}
+
+.start .songs{
+    display: flex;
+}
+
+
+.tier div{
+    display: flex;
+}
+
+.tier-label {
+    background-color: #f0f0f0; /* Couleur de fond pour le label */
+    padding: 5px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+    font-weight: bold; /* Mettre le texte en gras */
+    margin-bottom: 5px; /* Espacement entre le label et les chansons */
+    border-radius: 5px; /* Arrondi des coins */
+    align-items: center;
+}
+
+.start{
+    margin-top: 3rem;
+}

@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/addVinyl.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/tierlist.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
     <script src="js/addVinyl.js"></script>
 </head>
 

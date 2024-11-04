@@ -44,7 +44,7 @@ function displaySuggestions(suggestions, type) {
 
             const coverArtUrl = await fetchCoverArt(item.id); // Obtenir l'image de couverture
             const coverImg = document.createElement('img');
-            coverImg.src = coverArtUrl || 'placeholder.jpg'; // Utiliser une image par défaut si pas d'image
+            coverImg.src = coverArtUrl || 'placeholder.webp'; // Utiliser une image par défaut si pas d'image
             coverImg.alt = displayText;
             coverImg.style.width = '50px'; // Largeur de l'image
             coverImg.style.height = 'auto'; // Hauteur automatique pour maintenir le ratio
@@ -134,9 +134,9 @@ async function fetchCoverArt(releaseId) {
         }
 
         // Si aucune image pertinente n'est trouvée, retourner la première image
-        return data.images.length > 0 ? data.images[0].image : 'placeholder.jpg'; // Image par défaut
+        return data.images.length > 0 ? data.images[0].image : 'placeholder.webp'; // Image par défaut
     }
-    return 'placeholder.jpg'; // Retourner l'image par défaut si la requête échoue
+    return 'placeholder.webp'; // Retourner l'image par défaut si la requête échoue
 }
 
 document.addEventListener('DOMContentLoaded', () => {
