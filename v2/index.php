@@ -26,7 +26,7 @@ if ($albumQuery != "") {
                     <div class="card-info">
                         <h3><?= htmlspecialchars($album['title']) ?> - <?= htmlspecialchars($album['artist']) ?></h3>
                         <div class="actions">
-                            <a href="tierlist.php" class="rank">Rank this album</a>
+                            <a href="tierlist.php?albumId=<?= $album['idAlbum'] ?>" class="rank">Rank this album</a>
                             <a href="https://www.deezer.com/album/<?= $album['idAlbum'] ?>" class="view" target="_blank">View on Deezer</a>
                         </div>
                     </div>
