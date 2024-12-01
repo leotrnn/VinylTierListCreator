@@ -137,7 +137,7 @@
     cursor: pointer;
     user-select: none;
     outline: none;
-}
+ }
 
 .editable-label:focus {
     border: 1px dashed var(--frontColor);
