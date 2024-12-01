@@ -109,32 +109,30 @@ if ($albumId) {
 <div class="tierlist">
     <div class="tier" data-tier="S">
         <div class="songs" id="tier-S" data-tier-name="S">
-            <div class="tier-label s">
-                <p>S</p>
-            </div> <!-- Label pour le tier -->
-            <!-- Les chansons seront ajoutées ici dynamiquement -->
+            <div class="tier-label s editable-label">S</div>
         </div>
     </div>
     <div class="tier" data-tier="A">
         <div class="songs" id="tier-A" data-tier-name="A">
-            <div class="tier-label a">A</div> <!-- Label pour le tier -->
+            <div class="tier-label a editable-label">A</div>
         </div>
     </div>
     <div class="tier" data-tier="B">
         <div class="songs" id="tier-B" data-tier-name="B">
-            <div class="tier-label b">B</div> <!-- Label pour le tier -->
+            <div class="tier-label b editable-label">B</div>
         </div>
     </div>
     <div class="tier" data-tier="C">
         <div class="songs" id="tier-C" data-tier-name="C">
-            <div class="tier-label c">C</div> <!-- Label pour le tier -->
+            <div class="tier-label c editable-label">C</div>
         </div>
     </div>
     <div class="tier" data-tier="D">
         <div class="songs" id="tier-D" data-tier-name="D">
-            <div class="tier-label d">D</div> <!-- Label pour le tier -->
+            <div class="tier-label d editable-label">D</div>
         </div>
     </div>
+
     <div class="start">
         <div class="songs">
             <?php foreach ($songs as $song): ?>
@@ -144,13 +142,94 @@ if ($albumId) {
             <?php endforeach; ?>
         </div>
     </div>
-    
+
 </div>
 
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
 <script>
+
+function adjustFontSizeToFit(container) {
+    const elements = document.querySelectorAll(container);
+    elements.forEach(el => {
+        let fontSize = 2; // Taille de police initiale en rem
+        const minFontSize = 0.8; // Taille minimale de police en rem
+
+        // Réinitialiser la taille de police avant de recalculer
+        el.style.fontSize = `${fontSize}rem`;
+
+        while ((el.scrollWidth > el.clientWidth || el.scrollHeight > el.clientHeight) && fontSize > minFontSize) {
+            fontSize -= 0.1; // Réduire progressivement la taille
+            el.style.fontSize = `${fontSize}rem`;
+        }
+    });
+}
+
+// Initialisation au chargement
+window.addEventListener('load', () => {
+    adjustFontSizeToFit('.tier-label, .song-title');
+});
+
+// Réagir aux changements de taille de fenêtre
+window.addEventListener('resize', () => {
+    adjustFontSizeToFit('.tier-label, .song-title');
+});
+
+
+
+document.querySelectorAll('.tier-label').forEach(label => {
+    const adjustFontSize = () => {
+        const span = label.querySelector('span');
+        if (!span) return;
+
+        // Réinitialise la taille pour mesurer correctement
+        span.style.fontSize = '1.5rem';
+        
+        // Vérifie si le texte dépasse
+        if (span.scrollWidth > label.clientWidth) {
+            span.classList.add('resized'); // Applique la classe pour réduire
+        } else {
+            span.classList.remove('resized'); // Réinitialise si tout tient
+        }
+    };
+
+    // Vérifie à chaque fois que le label est modifié
+    label.addEventListener('input', adjustFontSize);
+
+    // Initialisation
+    adjustFontSize();
+});
+
+
+    document.querySelectorAll('.editable-label').forEach(label => {
+        label.addEventListener('click', () => {
+            // Rendre le label éditable
+            label.setAttribute('contenteditable', 'true');
+            label.focus();
+        });
+
+        label.addEventListener('blur', () => {
+            // Enregistrer les changements et désactiver l'édition
+            label.setAttribute('contenteditable', 'false');
+
+            // Mettre à jour le nom du tier dans les attributs ou ailleurs si nécessaire
+            const parentTier = label.closest('.tier');
+            if (parentTier) {
+                parentTier.setAttribute('data-tier-name', label.textContent.trim());
+            }
+        });
+
+        label.addEventListener('keydown', (e) => {
+            // Désactiver l'édition si l'utilisateur appuie sur "Entrée"
+            if (e.key === 'Enter') {
+                e.preventDefault(); // Empêcher le retour à la ligne
+                label.blur(); // Déclenche l'événement "blur"
+            }
+        });
+    });
+
+
     // Sélectionner tous les titres des chansons
     const songTitles = document.querySelectorAll('.song-title');
 
