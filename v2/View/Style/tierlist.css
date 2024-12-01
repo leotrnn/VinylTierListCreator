@@ -137,7 +137,6 @@
     cursor: pointer;
     user-select: none;
     outline: none;
-    padding: 0.5rem;
 }
 
 .editable-label:focus {
