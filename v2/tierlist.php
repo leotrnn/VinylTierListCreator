@@ -48,11 +48,7 @@ if ($albumId) {
     // Décoder les données JSON
     $data = json_decode($response, true);
     $songs = array_column($data['data'], 'title');
-    $vinyl = [
-        'nameVinyl' => $data['data'][0]['album']['title'],
-        'nameArtist' => $data['data'][0]['album']['artist']['name'],
-        'imgCover' => $data['data'][0]['album']['cover_xl']
-    ];
+ 
 } else {
     die('Album ID manquant');
 }
