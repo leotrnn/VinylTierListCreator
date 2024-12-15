@@ -18,7 +18,7 @@
 
 <h3>2. Choisissez l'album</h3>
 <p align="justify">les 9 meilleurs résultats s'afficheront, séléectionnez celui que vous souhaitez et cliquez sur "rank this album"</p>
-
+<img src="https://github.com/user-attachments/assets/e1500454-fb03-4b1b-853c-5533e9721017" alt="logo" width="100%">
 
 <h2 align="center">Installation et utilisation</h2>
 
