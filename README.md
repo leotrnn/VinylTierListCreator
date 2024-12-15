@@ -20,6 +20,13 @@
 <p align="justify">les 9 meilleurs résultats s'afficheront, séléectionnez celui que vous souhaitez et cliquez sur "rank this album"</p>
 <img src="https://github.com/user-attachments/assets/e1500454-fb03-4b1b-853c-5533e9721017" alt="logo" width="100%">
 
+<p>La page tierlist se présente comme ceci :</p>
+<img src="https://github.com/user-attachments/assets/28ea02c9-e4bd-40d8-b690-ce3445409c04" alt="logo" width="100%">
+
+
+<h3>3. Modifiez les labels des tiers (optionnel) </h3>
+<p align="justify">Cliquez sur le label que vous souhaitez modifier</p>
+
 <h2 align="center">Installation et utilisation</h2>
 
 <h3>1. Démarrez vos services apache2 et mysql</h3>
