@@ -1,18 +1,51 @@
-# VinylTierListCreator 🎶
+<h1 align="center">Kurei's Vinyl tierlist creator</h1>
 
-Bienvenue sur **VinylTierListCreator**, un projet passionnant qui te permet de créer des tier lists interactives des morceaux présents sur tes vinyles préférés, en utilisant l'API Deezer pour récupérer les informations sur les albums et leurs morceaux. Le but est simple : tu sélectionnes un album, et tu attribues chaque morceau à un tier (S, A, B, C, D), créant ainsi une expérience personnalisée et visuellement agréable.
+<p align="justify">Imaginez : vous écoutez un superbe vinyle, vous voulez à tout prix rank les sons de cet album avec vos amis, mais en vous rendant sur tierlistmaker, personne n'a créé de tierlist pour cet album. Pas cool hein ? Mais pas de panique, <em>Vinyl tierlist creator</em> est un créateur dynamique de tierlist pour albums, pour que vous n'ayez plus jamais à devoir créer de tierlist vous même !</p>
 
-## 💡 Fonctionnalités
+<h2 align="center">Table des matières</h2>
 
-- **Récupération des albums** via l'API Deezer en entrant simplement l'ID de l'album.
-- **Création d'une tier list** pour chaque album avec des labels personnalisables.
-- **Interface moderne** et responsive, adaptée pour tous les appareils.
-- **Édition en temps réel** des labels de tiers pour une personnalisation complète.
-- **Drag & Drop** pour réorganiser facilement les morceaux dans les différents tiers.
+1. [Fonctionnement](#fonctionnement)
+4. [Technologies utilisées](#technologies-utilisées)
+5. [Installation et utilisation](#installation-et-utilisation)
+6. [Potentiels bugs](#potentiels-bugs)
 
-## 🚀 Installation
+<h2 align="center">Fonctionnement</h2>
+<h3>1. cherchez l'album que vous souhaitez rank</h3>
+![image](https://github.com/user-attachments/assets/33b53f0e-081d-4214-ac8a-62ad5fa55522)
 
-1. Clone ce dépôt sur ton ordinateur.
-   ```bash
-   git clone https://github.com/ton-utilisateur/VinylTierListCreator.git
-   
+
+<h2 align="center">Installation et utilisation</h2>
+
+<h3>1. Démarrez vos services apache2 et mysql</h3>
+
+```bash
+sudo service apache2 start
+sudo service mysql start
+```
+
+<h3>3. Rendez-vous dans le répertoire des projets web locaux</h3>
+
+```bash
+# Si le sous-système utilisé est WSL :
+cd /var/www/html
+```
+
+<h3>2. Clonez le dépôt</h3>
+      
+```bash
+git clone https://github.com/leotrnn/swissexplorers.git
+```
+
+<h3>7. Ouvrez votre navigateur web et allez sur localhost</h3>
+
+<h2 align="center">Potentiels bugs</h2>
+<h3>Impossible de cloner le projet car le dossier /var/www est protégé</h3>
+      
+```bash
+# Donner l'accès d'écriture au dossier www
+sudo chown -R www-data:www-data /var/www
+sudo chmod -R g+rwX /var/www
+sudo chmod 0777 /var/www
+sudo chown -R [VOTRE USER] var/www
+```
+
