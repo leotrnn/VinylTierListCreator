@@ -31,6 +31,13 @@
 <p align="justify">Pour placer les musiques dans les différents tiers, il suffit de drag and drop la musique ou vous le souhaitez</p>
 <img src="https://github.com/user-attachments/assets/460f4edb-de1a-4ecd-a7f6-ac0d27991830" alt="logo" width="100%">
 
+<h2 align="center">Technologies utilisées</h2>
+<ol>
+      <li>**Albums :** api deezer</li>
+      <li>**Frontend :** HTML, CSS, JS</li>
+      <li>**Backend :** PHP</li>
+</ol>
+
 <h2 align="center">Installation et utilisation</h2>
 
 <h3>1. Démarrez vos services apache2 et mysql</h3>
