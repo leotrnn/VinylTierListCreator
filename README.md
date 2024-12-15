@@ -23,9 +23,10 @@
 <p>La page tierlist se présente comme ceci :</p>
 <img src="https://github.com/user-attachments/assets/28ea02c9-e4bd-40d8-b690-ce3445409c04" alt="logo" width="100%">
 
-
 <h3>3. Modifiez les labels des tiers (optionnel) </h3>
-<p align="justify">Cliquez sur le label que vous souhaitez modifier</p>
+<p align="justify">Cliquez sur le label que vous souhaitez modifier, et nommez le comme vous le souhaitez</p>
+<img src="https://github.com/user-attachments/assets/3c0c62d1-01df-4363-8fd7-67d96aeb82f3" alt="logo" width="100%">
+
 
 <h2 align="center">Installation et utilisation</h2>
 
