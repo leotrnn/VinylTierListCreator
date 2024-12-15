@@ -27,6 +27,9 @@
 <p align="justify">Cliquez sur le label que vous souhaitez modifier, et nommez le comme vous le souhaitez</p>
 <img src="https://github.com/user-attachments/assets/3c0c62d1-01df-4363-8fd7-67d96aeb82f3" alt="logo" width="100%">
 
+<h3>4. Amusez vous !</h3>
+<p align="justify">Pour placer les musiques dans les différents tiers, il suffit de drag and drop la musique ou vous le souhaitez</p>
+<img src="https://github.com/user-attachments/assets/460f4edb-de1a-4ecd-a7f6-ac0d27991830" alt="logo" width="100%">
 
 <h2 align="center">Installation et utilisation</h2>
 
