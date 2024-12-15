@@ -11,7 +11,8 @@
 
 <h2 align="center">Fonctionnement</h2>
 <h3>1. cherchez l'album que vous souhaitez rank</h3>
-![image](https://github.com/user-attachments/assets/33b53f0e-081d-4214-ac8a-62ad5fa55522)
+<img src="https://github.com/user-attachments/assets/4dd77709-d097-4dfb-bae1-01326a467fa3" alt="logo" width="400">
+
 
 
 <h2 align="center">Installation et utilisation</h2>
