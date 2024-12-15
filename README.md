@@ -10,8 +10,9 @@
 6. [Potentiels bugs](#potentiels-bugs)
 
 <h2 align="center">Fonctionnement</h2>
-<h3>1. cherchez l'album que vous souhaitez rank</h3>
+<p align="justify">La page d'accueil se présente comme ceci :</p>
 <img src="https://github.com/user-attachments/assets/dd8d5f46-a6a2-431a-b247-a9e0b127da00" alt="logo" width="100%">
+<h3>1. cherchez l'album que vous souhaitez rank</h3>
 
 
 
