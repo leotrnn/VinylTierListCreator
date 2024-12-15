@@ -13,10 +13,11 @@
 <p align="justify">La page d'accueil se présente comme ceci :</p>
 <img src="https://github.com/user-attachments/assets/dd8d5f46-a6a2-431a-b247-a9e0b127da00" alt="logo" width="100%">
 
-<h3>1. cherchez l'album que vous souhaitez rank</h3>
+<h3>1. Cherchez l'album que vous souhaitez rank</h3>
 <img src="https://github.com/user-attachments/assets/82b879c5-2548-4ed2-a7b6-6b4ab941a624" alt="logo" width="100%">
 
-
+<h3>2. Choisissez l'album</h3>
+<p align="justify">les 9 meilleurs résultats s'afficheront, séléectionnez celui que vous souhaitez et cliquez sur "rank this album"</p>
 
 
 <h2 align="center">Installation et utilisation</h2>
